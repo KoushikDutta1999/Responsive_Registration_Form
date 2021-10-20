@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+            <div class="form">
+                <div class="heading">
+                    <h2>Registration From</h2>
+                </div>
+                <div class="form-wrap fullname">
+                    <div class="form-item">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="first name">
+                    </div>
+                    <div class="form-item">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="last name">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        <label for="">Email Address</label>
+                        <input type="text" placeholder="abc@gmail.com" id="email-id" oninput="checker()">
+                    </div>
+                    <div id="icon"></div>
+                    <p id="error-msg">Please Enter a valid Email Id</p>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        <label for="">Phone</label>
+                        <input type="text" placeholder="1234567890">
+                    </div>
+                </div>
+                <div class="form-wrap select-box">
+                    <div class="form-item">
+                        <label for="">City</label>
+                        <select name="Country" id="">
+                            <option value="">Kolkata</option>
+                            <option value="">London</option>
+                            <option value="">Barcelona</option>
+                            <option value="">Paris</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="">Country</label>
+                        <select name="Country" id="">
+                            <option value="">India</option>
+                            <option value="">England</option>
+                            <option value="">Spain</option>
+                            <option value="">France</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Get Started">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
